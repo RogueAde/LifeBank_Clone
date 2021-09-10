@@ -1,5 +1,82 @@
 $primary-color : teal ;
 
-body{
-    background-color: $primary-color;
+%flex-display {
+    display: flex;
 }
+
+/* ---------------
+    General styles
+    -------------- */
+
+html,
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding:  0%;
+}
+img{
+    display: inline;
+    width: 100%;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 0%;
+}
+p{
+    font-size: 1rem;
+}
+
+/* ---------------
+    Section 1
+    -------------- */
+
+    // NavBar
+
+    #main-section{
+        padding: .5em 1.5em;
+    }
+
+    #section1--nav{
+        @extend %flex-display;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+
+    .nav-image-div{
+        width: 60%;
+    }
+    .hamburger{
+        width: 15%;
+    }
+
+    // Article
+
+    .main-section--article{
+        text-align: center;
+
+         p{
+             line-height: 1.5;
+             font-size: 1.1rem;
+         }
+
+    }
+
+    .main-section--article--image{
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .main-section--article--hospitals{
+        @extend %flex-display ;
+        flex-direction: row;
+        overflow-x: scroll;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .carousel-image{
+        width: 90%;
+    }
+
+
