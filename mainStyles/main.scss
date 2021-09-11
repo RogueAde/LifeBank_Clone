@@ -24,6 +24,7 @@ body{
     box-sizing: border-box;
     margin: 0%;
     padding:  0%;
+    -webkit-tap-highlight-color: transparent;
 }
 img{
     display: inline;
@@ -40,9 +41,10 @@ p{
     font-family: $serif;
     font-weight: 400;
 }
-
+a:active,
+a:focus,
 a:active {
-   text-decoration: none;
+   background-color: white;
 }
 
 button:hover,
@@ -102,7 +104,8 @@ button:focus{
             letter-spacing: .1em;
             font-family: $sanserif;
         }
-        a:hover{
+        a:hover,
+        a:focus{
             color: #b70303;
             font-size: 1.5rem;
             text-transform: uppercase;
