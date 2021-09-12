@@ -6,7 +6,6 @@ const allsections = document.querySelector("#allDisabled") ;
 
 function lilac() {
     if(menuIcon.getAttribute("src") == "images/hamburger-icon.svg"){
-        document.querySelector(".hamburger").classList.add("fadeIn") ;
         allsections.style.display = "none";
         menuIcon.setAttribute("src", "images/close-hamburger-icon.svg") ;
         mainSectionNavs.style.display= "none" ;
