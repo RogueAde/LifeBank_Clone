@@ -210,6 +210,7 @@ p{
   #section2,
   #section3,
   #section4{
+    height: 100vh;
     @extend %backgroundimgs ;
     color: #f4f6f7;
     line-height: 1.5;
@@ -288,9 +289,7 @@ p{
    }
 
    .mainGrid--items{
-     box-shadow: rgba(183, 3, 3, 1) 5px 5px, rgba(177, 17, 17, 0.589) 10px 10px,
-      rgba(187, 30, 30, 0.315) 15px 15px, rgba(114, 20, 20, 0.151) 20px 20px,
-       rgba(122, 18, 18, 0.048) 25px 25px;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
        background-color: white;
        padding: .5em .5em .25em;
        margin: .5em;
@@ -298,6 +297,7 @@ p{
        &:hover{
            background-color: black;
            color: #b70303;
+           transform: scale(1.1);
        }
        h3{
            font-family: $sanserif;
@@ -351,13 +351,70 @@ p{
    }
 
 //    News Flash Section
+   .newsFlash{
+       background-color: lighten(#000, 10%);
+       padding: 2em .75em;
+       text-align: center;
+       h3{
+           color: #b70303;
+           font-family: $sanserif;
+       }
+       &--images{
+           display: grid;
+           padding: 1em .5em;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat(3, 1fr);
+       }
+       div{
+        padding: 1em .75em;
+        margin: .5em .5em;
+        border-radius: 7px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+         rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+         rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+         rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+         rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        &:hover{
+            background-color: #b70303;
+            transform: scale(1.1);
+        }
+    }
+   }
 
+/* ---------------------
+   Footer.
+---------------------- */
 
-  
-   
-
-
-
+#footer{
+    background-color: #b70303;
+    text-align: center;
+    color: white;
+    padding: .75em 1.5em;
+    p{
+        font-size: .75rem;
+        font-family: $sanserif;
+    }
+    ul{
+        padding: .5em 0;
+        padding-left: 0%;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    li{
+        border: 1px white;
+        border-radius: 10px;
+    }
+    a{
+        font-size: 1.5rem;
+        color: black;
+        transition: 1s;
+        &:hover,
+        &:focus{
+          font-size: 2rem;
+        }
+    }
+}
 
 
 
