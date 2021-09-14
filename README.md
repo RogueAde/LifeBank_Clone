@@ -28,6 +28,3 @@ The next thing to do now is learning a javaScript framework. I'm planning to lea
 Thanks for going through this markdown, I really appreciate your patience amd audience going through it. 
 If you'll like to connect with a beginner front-end developer that is somehow intelligent (not 100% true🙂), check me out on any social platform as "Sodiq Sanusi" or just [click this, you lazy ass.](https://www.facebook.com/sodiqsanusi0)
 
-
-
-
